@@ -1,0 +1,3 @@
+# DCash
+
+The Gunrock server was written by Professor Sam King from UC Davis and is actively maintained by him as well. The `http_parse.c` file was written by [Ryan Dahl](https://github.com/ry) and is licensed under the BSD license by Ryan. This programming assignment is from the [OSTEP](http://ostep.org) textbook.
