@@ -1,0 +1,26 @@
+auth john tacos123 john@dcash.io
+auth warren cach3m0n3y berkshire@bhway.com
+deposit 25.00 4242424242424242 2024 02 322
+send john 5.00
+send rothschild 5.00
+balance
+auth john tacos123 john@dcash.io
+balance
+send warren 5.00
+auth warren cach3m0n3y berkshire@bhway.com
+transfer 50.00 john
+send john 50.00
+deposit 25.00 242424242424242 2024 02 322
+deposit 25.00 4242424242424242 2024 02 322
+balance
+send john
+send john 50.00
+auth john tacos123 john@dcash.io
+balance
+auth bob pizza456 bob@dcash.io
+auth john tacos123 john@dcash.io
+send bob 50.00
+auth bob piza456 bob@dcash.io
+auth bob pizza456 bob@dcash.io
+balance
+logout
