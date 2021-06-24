@@ -5,7 +5,7 @@ CFLAGS = -g -Werror -Wall -I include -I shared/include -I/usr/local/opt/openssl@
 LDFLAGS = -L/usr/local/opt/openssl@1.1/lib -lssl -lcrypto
 VPATH = shared
 
-OBJS = gunrock.o MyServerSocket.o MySocket.o HTTPRequest.o HTTPResponse.o http_parser.o HTTP.o HttpService.o HttpUtils.o AccountService.o FileService.o TransferService.o WwwFormEncodedDict.o StringUtils.o Base64.o AuthService.o DepositService.o HttpClient.o HTTPClientResponse.o MySslSocket.o
+OBJS = gunrock.o MyServerSocket.o MySocket.o HTTPRequest.o HTTPResponse.o http_parser.o HTTP.o HttpService.o HttpUtils.o AccountService.o TransferService.o WwwFormEncodedDict.o StringUtils.o Base64.o AuthService.o DepositService.o HttpClient.o HTTPClientResponse.o MySslSocket.o
 
 -include $(OBJS:.o=.d)
 
