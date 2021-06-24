@@ -317,7 +317,7 @@ bool ValidCommand(std::string command) {
 }
 
 void Batch(const char* argv) {
-  const std::string def_err = "Invalid command provided.";
+  const std::string inv_err = "Invalid command provided.";
   const std::string err_file = "Could not open batch file.";
   std::ifstream file(argv);
 
@@ -339,13 +339,13 @@ void Batch(const char* argv) {
     if (ValidCommand(input)) {
       CallCommand(input);
     } else {
-        OutputError(def_err);
+        OutputError(inv_err);
     }
   }
 }
 
 void Interactive(void) {
-  const std::string err = "Invalid command provided.";
+  const std::string inv_err = "Invalid command provided.";
   const std::string prompt = "D$> ";
   std::string user_input;
 
@@ -361,7 +361,7 @@ void Interactive(void) {
     if (ValidCommand(user_input)) {
       CallCommand(user_input);
     } else {
-        OutputError(err);
+        OutputError(inv_err);
     }
     std::cout << prompt;
   }
