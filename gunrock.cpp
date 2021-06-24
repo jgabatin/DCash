@@ -21,7 +21,6 @@
 #include "AccountService.h"
 #include "AuthService.h"
 #include "DepositService.h"
-#include "FileService.h"
 #include "TransferService.h"
 #include "MySocket.h"
 #include "MyServerSocket.h"
@@ -157,7 +156,6 @@ int main(int argc, char *argv[]) {
   services.push_back(new TransferService());
   services.push_back(new DepositService());
   services.push_back(new AccountService());
-  services.push_back(new FileService(BASEDIR));
 
   // Make sure that all services have a pointer to the
   // database object singleton
